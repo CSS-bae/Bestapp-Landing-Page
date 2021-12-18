@@ -140,9 +140,9 @@ header label{
 }
 
 .home .content p{
-    font-size: 3rem;
+    font-size: 2rem;
     color: #666;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 .features .box-container{
@@ -165,11 +165,9 @@ header label{
     transition: .2s linear;
 }
 
-.features .box-container .box img{
+ .features .box-container .box img{
     height: 15rem;
-}
-
-.features .box-container .box 
+} 
 
 
 
