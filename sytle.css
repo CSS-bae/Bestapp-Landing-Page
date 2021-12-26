@@ -169,8 +169,113 @@ header label{
     height: 15rem;
 } 
 
+.features .box-container .box h3{
+    font-size: 1.5rem;
+    color: #333;
+    padding-top: 1rem;
+} 
 
+.features .box-container .box p{
+    font-size: 1rem;
+    color: #666;
+    padding-top: 1rem;
+} 
 
+.about{
+    background: url(./about-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.about .column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .column .image{
+    flex: 1 1 40rem;
+}
+
+.about .column .image img{
+    width: 100%;
+}
+
+.about .column .content{
+    flex: 1 1 40rem;
+}
+
+.about .column .content h3{
+  font-size: 3rem;
+  color: #666;
+}
+
+.about .column .content p{
+  font-size: 1.2rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.about .column .content .buttons a:last-child{
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+
+.newsletter{
+    text-align: center;
+    padding: 5rem 1rem;
+    background: url(./subscribe-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.newsletter h3{
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.newsletter p{
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 2rem auto;
+    width: 70rem;
+}
+
+.newsletter form{
+    display: flex;
+    max-width: 70rem;
+    border: .2rem solid #fff;
+    padding: 2.5rem;
+    border-radius: 5rem;
+    margin: 2rem auto;
+    height: 8rem;
+}
+
+.newsletter form input[type="email"]{
+    padding: 0 2rem;
+    font-size: 1.7rem;
+    background: none;
+    width: 100%;
+    color: #fff;
+    text-transform: none;
+    background: none;
+}
+
+.newsletter form input[type="email"]::placeholder{
+    color: #eee;
+    text-transform: capitalize;
+}
+
+.newsletter form input[type="submit"]{
+    background: #fff;
+    /* width: 30rem; */
+    font-size: 1.7rem;
+    border-radius: 5rem;
+    cursor: pointer;
+}
 
 
 
@@ -240,10 +345,21 @@ header input:checked ~ label::before{
     font-size: 1.6rem;
 }
 
+.about{
+    background-position: right;
+}
+
 }
 
 @media (max-width:450px){
     html{
         font-size: 50%;
+    }
+    .about .column .content .buttons a{
+     width: 100%;
+     text-align: center;
+    }
+    .about .column .content .buttons a:last-child{
+        margin: 1rem 0;
     }
 }
